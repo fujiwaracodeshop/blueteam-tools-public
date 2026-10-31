@@ -1,0 +1,11 @@
+$xp = "*[EventData[Data[@Name='TargetUserName']='svc-all']]"
+Get-WinEvent -LogName Security -FilterXPath $xp -MaxEvents 2000 |
+  ForEach-Object {
+    $d = ([xml]$_.ToXml()).Event.EventData.Data
+    [pscustomobject]@{
+      Time = $_.TimeCreated
+      Id   = $_.Id
+      IP   = ($d | ? Name -eq 'IpAddress').'#text'
+      Host = ($d | ? Name -eq 'WorkstationName').'#text'
+    }
+  } | Sort-Object IP -Unique
