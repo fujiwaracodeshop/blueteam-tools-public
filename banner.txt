@@ -1,0 +1,6 @@
+*******************************************************************************
+WARNING: UNAUTHORIZED ACCESS to this Computer System is in violation of the Criminal Law and
+MWCCDC Organizational Policy. Violators will be subject to prosecution and/or discipline. MWCCDC maintains the right to examine, or adjust or limit access rights of, accounts, files, mail, and other IT Resources for legal purposes or business continuity.
+
+NOTICE:  This Computer System is for the proper use of authorized users only. Individuals accessing, attempting to access, or using this Computer System without authority, in violation of their authority, or in excess of their authority, are subject to prosecution and to having all their activities on this System monitored and recorded by MWCCDC personnel.
+*******************************************************************************
